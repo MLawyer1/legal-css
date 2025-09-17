@@ -1,7 +1,6 @@
-body, p {
-    line-height: 2 !important;     /* مسافة أوسع بين السطور */
-    margin-bottom: 10px !important; /* مسافة بسيطة بين الفقرات */
-    font-family: "Tahoma", "Arial", sans-serif !important; /* خط أنسب للنصوص العربية */
-    font-size: 17px !important;     /* حجم خط مريح للقراءة */
-    text-align: justify !important; /* ضبط النص على الطرفين */
+body, p, textarea {
+    font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+    line-height: 1.6 !important;   /* تحسين المسافة بين السطور */
+    margin-bottom: 0 !important;   /* إزالة المسافات الإضافية */
+    font-size: 1rem !important;    /* حجم خط مناسب */
 }
