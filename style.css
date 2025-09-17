@@ -1,6 +1,14 @@
+/* استدعاء خط IBM Plex Sans Arabic من Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap');
+
+/* تطبيق الخط والتنسيق على النصوص */
 body, p, textarea {
     font-family: 'IBM Plex Sans Arabic', sans-serif !important;
-    line-height: 1.6 !important;   /* تحسين المسافة بين السطور */
-    margin-bottom: 0 !important;   /* إزالة المسافات الإضافية */
-    font-size: 1rem !important;    /* حجم خط مناسب */
+    line-height: 1.6 !important;      /* تحسين المسافة بين السطور */
+    margin-bottom: 0 !important;      /* إزالة المسافات الإضافية */
+    font-size: 1rem !important;       /* حجم خط مناسب */
+    color: #000 !important;           /* لون النص أسود */
+    direction: rtl !important;        /* اتجاه الكتابة من اليمين لليسار */
+    text-align: right !important;     /* محاذاة النص لليمين */
+    white-space: pre-wrap !important; /* الحفاظ على تنسيق النصوص */
 }
