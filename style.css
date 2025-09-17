@@ -1,8 +1,10 @@
-textarea, [data-role="file-content"] {
-  font-family: "IBM Plex Sans Arabic", sans-serif !important;
-  font-size: 14px !important;       /* نفس الحجم الظاهر */
-  line-height: 1.6 !important;      /* نفس التباعد */
-  direction: rtl !important;        /* من اليمين لليسار */
-  text-align: right !important;     /* محاذاة يمين */
-  white-space: pre-wrap !important; /* يحافظ على الأسطر والمسافات */
+/* تنسيق نصوص القوانين واللوائح والعقود */
+[data-role="file-content"] {
+  font-family: 'IBM Plex Sans Arabic', system-ui, sans-serif !important;
+  font-size: 11px !important;       /* حجم الخط */
+  line-height: 1.6 !important;      /* المسافة بين السطور */
+  direction: rtl !important;        /* اتجاه النص */
+  text-align: right !important;     /* محاذاة النص لليمين */
+  white-space: pre-wrap !important; /* يحافظ على الأسطر والفواصل كما هي */
+  letter-spacing: normal !important; /* الغاء أي تمدد أو تضييق للحروف */
 }
