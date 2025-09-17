@@ -1,14 +1,31 @@
-/* استدعاء خط IBM Plex Sans Arabic من Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap');
+/* استيراد خط IBM Plex Sans Arabic */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap');
 
-/* تطبيق الخط والتنسيق على النصوص */
-body, p, textarea {
-    font-family: 'IBM Plex Sans Arabic', sans-serif !important;
-    line-height: 1.6 !important;      /* تحسين المسافة بين السطور */
-    margin-bottom: 0 !important;      /* إزالة المسافات الإضافية */
-    font-size: 1rem !important;       /* حجم خط مناسب */
-    color: #000 !important;           /* لون النص أسود */
-    direction: rtl !important;        /* اتجاه الكتابة من اليمين لليسار */
-    text-align: right !important;     /* محاذاة النص لليمين */
-    white-space: pre-wrap !important; /* الحفاظ على تنسيق النصوص */
+/* نصوص العارض فقط (صندوق عرض المستند) — ضعي كل المعرّفات المحتملة هنا */
+.viewer-content,
+.prose,
+.text-container,
+[data-role="file-content"],
+[data-component="FilePreview"] {
+  font-family: 'IBM Plex Sans Arabic', system-ui, sans-serif !important;
+  font-weight: 400 !important;          /* خط عادي غير عريض */
+  font-size: 12px !important;           /* حجم مناسب مثل الصورة الثالثة */
+  line-height: 1.85 !important;         /* تباعد مريح بين السطور */
+  letter-spacing: 0 !important;         /* بلا تمديد بين الحروف */
+  -webkit-font-smoothing: antialiased;  /* تنعيم العرض */
+  text-rendering: optimizeLegibility;
+  text-align: right !important;
+  direction: rtl !important;
+
+  /* الأهم: الحفاظ على الأسطر الفارغة التي تكتبينها */
+  white-space: pre-wrap !important;
 }
+
+/* تقليل مسافة نهاية الفقرة بدون إلغائها (لعرض سطر فارغ عند الحاجة فقط) */
+.viewer-content p,
+.prose p {
+  margin: 0 0 .35rem 0 !important;
+}
+
+/* منع أي تعميم سابق كان يلغي المسافات أسفل الأسطر */
+p { margin-bottom: .35rem !important; }
