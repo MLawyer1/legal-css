@@ -1,7 +1,8 @@
+
 /* تنسيق نصوص القوانين واللوائح والعقود */
 [data-role="file-content"] {
-  font-family: 'IBM Plex Sans Arabic', system-ui, sans-serif !important;
-  font-size: 11px !important;       /* حجم الخط */
+  font-family: 'Tajawal', system-ui, sans-serif !important;
+  font-size: 12px !important;       /* حجم الخط */
   line-height: 1.6 !important;      /* المسافة بين السطور */
   direction: rtl !important;        /* اتجاه النص */
   text-align: right !important;     /* محاذاة النص لليمين */
